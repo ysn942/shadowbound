@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=3 uid="uid://bqhfa3mivsu24"]
+
+[ext_resource type="Texture2D" uid="uid://c51qfi3baq14f" path="res://tiles/sprite-removebg-preview.png" id="1_3cmqu"]
+[ext_resource type="Script" path="res://controlsperso.cs" id="1_hyyd2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ghx78"]
+radius = 4.98
+height = 50.77
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f50sx"]
+atlas = ExtResource("1_3cmqu")
+region = Rect2(0, 121, 170, 187)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2b81"]
+atlas = ExtResource("1_3cmqu")
+region = Rect2(170, 121, 170, 187)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lefay"]
+atlas = ExtResource("1_3cmqu")
+region = Rect2(166, 303, 156, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8crn"]
+atlas = ExtResource("1_3cmqu")
+region = Rect2(10, 303, 156, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tr1bw"]
+atlas = ExtResource("1_3cmqu")
+region = Rect2(322, 303, 156, 176)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jr3nm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f50sx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2b81")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lefay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8crn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tr1bw")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 6.0
+}]
+
+[node name="player" type="CharacterBody2D"]
+scale = Vector2(-0.352685, -4.37673)
+script = ExtResource("1_hyyd2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(48.2017, -2.28481)
+scale = Vector2(18, -0.673)
+skew = 0.139626
+shape = SubResource("CapsuleShape2D_ghx78")
+one_way_collision_margin = 0.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 3.14159
+scale = Vector2(2.31187, 0.216398)
+sprite_frames = SubResource("SpriteFrames_jr3nm")

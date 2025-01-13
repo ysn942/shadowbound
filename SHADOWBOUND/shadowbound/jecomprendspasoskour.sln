@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jecomprendspasoskour", "jecomprendspasoskour.csproj", "{C657C4A7-C01A-40ED-8DF0-7D2508D389EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C657C4A7-C01A-40ED-8DF0-7D2508D389EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C657C4A7-C01A-40ED-8DF0-7D2508D389EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C657C4A7-C01A-40ED-8DF0-7D2508D389EF}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{C657C4A7-C01A-40ED-8DF0-7D2508D389EF}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{C657C4A7-C01A-40ED-8DF0-7D2508D389EF}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{C657C4A7-C01A-40ED-8DF0-7D2508D389EF}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
