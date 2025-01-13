@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqj482d31vn7n"]
+
+[ext_resource type="Texture2D" uid="uid://bjhico7cfemh6" path="res://menu/images/42e12044-c121-481e-b696-2a24a125dc64.jpg" id="1_2p4a4"]
+[ext_resource type="Script" path="res://MenuOptions.cs" id="1_4uvrr"]
+
+[sub_resource type="SystemFont" id="SystemFont_j4do7"]
+font_names = PackedStringArray("Algerian")
+
+[sub_resource type="SystemFont" id="SystemFont_8dlil"]
+font_names = PackedStringArray("Algerian")
+
+[sub_resource type="SystemFont" id="SystemFont_1esud"]
+font_names = PackedStringArray("Algerian")
+
+[node name="menu options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = -8.0
+offset_right = -5.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4uvrr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 6.0
+offset_right = 1789.0
+offset_bottom = 1030.0
+scale = Vector2(0.724034, 0.713454)
+texture = ExtResource("1_2p4a4")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = -232.0
+offset_right = 707.0
+offset_bottom = 357.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.401236, 0.808647)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_j4do7")
+theme_override_font_sizes/font_size = 150
+text = "CONTRÔLES"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_8dlil")
+theme_override_font_sizes/font_size = 150
+text = "SONS"
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="button3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_1esud")
+theme_override_font_sizes/font_size = 150
+text = "QUITTER"
